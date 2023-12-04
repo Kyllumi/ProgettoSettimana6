@@ -1,0 +1,66 @@
+@import 'override';
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item>div {
+    display: none;
+  }
+
+  .carousel-inner .carousel-item :not(.active) {
+    display: none;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+.carousel-item img {
+  margin: 0 2px;
+  &:hover {
+    transform: scale(1.1);
+    transition: ease 0.2s;
+  }
+  &:not(:hover) {
+    transition: ease 0.2s;
+  }
+}
+
+.carousel-control-prev {
+  left: -6%;
+}
+.carousel-control-next {
+  right: -6%;
+}
+
+#editProfile {
+  width: 40%;
+}
