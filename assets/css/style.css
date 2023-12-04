@@ -11866,9 +11866,10 @@ a {
 @media (max-width: 767px) {
   .carousel-inner .carousel-item > div {
     display: none;
+    margin-left: 10em;
   }
-  .carousel-inner .carousel-item :not(.active) {
-    display: none;
+  .carousel-inner .carousel-item :not(:first-child) {
+    display: none !important;
   }
 }
 .carousel-inner .carousel-item.active,
