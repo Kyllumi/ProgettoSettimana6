@@ -27,9 +27,14 @@
         <h1 class="fw-normal border-bottom border-opacity-50 border-secondary my-3">Edit Profile</h1>
         <main class="row d-flex justify-content-start border-bottom border-opacity-50 border-secondary">
             <div class="col-3">
-                <button class="p-0 border-0"><img src="assets/media/avatar.png" alt="avatar" width="150"
-                        class="img-fluid"></button>
+                        <button type="button" class="btn position-relative p-0">
+                            <img src="assets/media/avatar.png" alt="avatar" width="150"
+                            class="img-fluid">
+                            <span id="pen" class="position-absolute px-1 bg-dark border border-light rounded-circle">
+                                <i class="bi bi-pen text-white"></i></span>
+                          </button>
             </div>
+
             <div class="col">
                 <div class="border-bottom pb-3 border-secondary border-opacity-50">
                     <p class="bg-body-tertiary bg-opacity-50 p-2 fs-5">Strive Student</p>
@@ -77,7 +82,7 @@
                 </div>
             </div>
         </main>
-        <footer class="d-flex justify-content-center mt-3">
+        <footer class="d-flex justify-content-center mt-3 mb-5">
             <button class="btn bg-light text-black fw-bold border rounded-0 py-1 px-3" type="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 SAVE
